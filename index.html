@@ -1,97 +1,84 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
-<link rel="stylesheet" href="style.css">
-</head>
+
 <body>
 
-   
-    <header id="main-header">
-        <h1 class="logo">ABC College</h1>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Courses</li>
-                <li>Notices</li>
-                <li></li>Campus</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-    </header>
+<div class="container">
 
-    
-    <section id="welcome">
-        <h2>Welcome to Your Future</h2>
-        <p>Empowering students with world-class education, cutting-edge research opportunities, and a vibrant campus community designed to foster global leaders.</p>
-        <button class="btn btn-apply">Apply Now</button>
-    </section>
+<h2>Student Registration Form</h2>
 
-    
-    <section id="courses">
-        <h2 class="section-title">Our Featured Courses</h2>
-        <div class="course-container">
-            <div class="card">
-                <h3>Computer Science</h3>
-                <p>Explore software engineering, AI, and data structures.</p>
-            </div>
-            <div class="card">
-                <span class="badge-new">New</span>
-                <h3>Data Science</h3>
-                <p>Master big data, machine learning, and statistical analysis.</p>
-            </div>
-            <div class="card">
-                <h3>Business Administration</h3>
-                <p>Learn leadership, modern marketing, and corporate finance.</p>
-            </div>
-        </div>
-    </section>
+<form>
 
-   
-    <section id="notice-board">
-        <h2>Latest Notices</h2>
-        <div class="notice-box">
-            <div class="notice-item"><strong>July 10:</strong> Final examination schedules for the Fall semester have been officially posted on the student portal. Please check your respective departments.</div>
-            <div class="notice-item"><strong>July 12:</strong> Registration for the Annual Hackathon 2026 is now open. Teams must register before the weekend deadline.</div>
-            <div class="notice-item"><strong>July 15:</strong> Campus Wi-Fi upgrade maintenance scheduled between 12:00 AM and 04:00 AM. Expect brief interruptions.</div>
-            <div class="notice-item"><strong>July 18:</strong> Guest lecture by industry experts on Quantum Computing trends in Hall B at 2:00 PM. All streams welcome.</div>
-            <div class="notice-item"><strong>July 22:</strong> Library hours extended until midnight for the upcoming exam preparation week.</div>
-        </div>
-    </section>
+<label for="name">Full Name</label>
+<input type="text" id="name" name="name" placeholder="Enter your name">
 
-    
-    <section id="campus">
-        <h2 class="section-title">Life at Apex</h2>
-        <div class="campus-container">
-            
-            <div class="image-placeholder">
-                <span class="placeholder-text">[ Beautiful Campus Grounds Image ]</span>
-            </div>
-            
-            <div class="info-box">
-                <h3>State-of-the-Art Campus</h3>
-                <p>Our campus spans over 50 acres of modern infrastructure, high-tech labs, lush green lawns, and collaborative student hubs.</p>
-            </div>
-        </div>
-    </section>
+<label for="id">Student ID</label>
+<input type="text" id="id" name="id" placeholder="Enter your ID">
 
-   
-    <button id="fixed-contact-btn">Contact Us</button>
+<label for="email">Email</label>
+<input type="email" id="email" name="email" placeholder="Enter your email">
 
-   
-    <footer id="footer">
-        <p class="footer-college-name">ABC College</p>
-        <p>Email: admissions@abc.edu | Phone: 01982012568<br>hotline: 16258</p>
-    </footer>
+<label for="phone">Phone Number</label>
+<input type="number" id="phone" name="phone" placeholder="Enter your phone number">
 
-</body>
-</html>
+<label>Gender</label>
+
+<div class="gender">
+<input type="radio" id="male" name="gender">
+<label for="male">Male</label>
+
+<input type="radio" id="female" name="gender">
+<label for="female">Female</label>
+
+<input type="radio" id="other" name="gender">
+<label for="other">Other</label>
+</div>
+
+<label for="dob">Date of Birth</label>
+<input type="date" id="dob" name="dob">
+
+<label>Programming Skills</label>
+
+<div class="skills">
+
+<input type="checkbox" id="html">
+<label for="html">HTML</label>
+
+<input type="checkbox" id="css">
+<label for="css">CSS</label>
+
+<input type="checkbox" id="javascript">
+<label for="javascript">JavaScript</label>
+
+<input type="checkbox" id="python">
+<label for="python">Python</label>
+
+</div>
+
+<label for="info">Additional Information</label>
+<textarea id="info" rows="5" placeholder="Write something about yourself"></textarea>
+
+<label for="photo">Upload Photo</label>
+<input type="file" id="photo">
+
+<label for="address">Address</label>
+<textarea id="address" rows="4" placeholder="Enter your address"></textarea>
+
+<div class="button-group">
+
+<input type="submit" value="Submit">
+
+<input type="reset" value="Reset">
+
+</div>
+
+</form>
+
+</div>
 
 </body>
 </html>
